@@ -7,8 +7,18 @@ public class ExisteA {
 
         System.out.println("Digite uma palavra/frase: ");
         String existeA = new Scanner(System.in).nextLine();
+
         if (existeA.contains("a") || existeA.contains("A")) {
-            System.out.println(contem);
+            int contadorA = 0;
+
+            for (int i = 0; i < existeA.length(); i++) {
+                char a = existeA.charAt(i);
+                if (a == 'a' || a == 'A') {
+                    contadorA++;
+                }
+            }
+            System.out.printf("%s e aparece %d vez(es)\n", contem, contadorA);
+
         } else
             System.out.println(naoContem);
 
