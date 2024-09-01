@@ -7,7 +7,7 @@ public class ValorVariavelSoma {
         K = K + 1;
         SOMA = SOMA + K;
     }
-        System.out.println(SOMA);
+        System.out.println("O valor da variavel 'SOMA' é: " + SOMA);
     }
 }
 
